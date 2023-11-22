@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GA Opt-out - Kakkuvelhotar</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#102e00" />
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+    <script>
+        function onLoad() {
+            document.cookie = "ga-opt-out=1; expires=Monday, 12-Jul-2027 12:00:00 UTC; path=/";
+            document.location.href = '/';
+        }
+    </script>
+  </head>
+  <body onload="onLoad()"></body>
+</html>
